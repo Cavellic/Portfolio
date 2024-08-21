@@ -1,0 +1,419 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <!-- UNICONS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <title>Carson Muzarabani | Portfolio</title>
+  </head>
+  <body>
+    <main class="main">
+      <!-- Header -->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="" class="nav__logo">c<span>ar</span>son</a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li>
+                <a href="#home" class="nav__link active-link">Home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="nav__link">About</a>
+              </li>
+
+              <li>
+                <a href="#services" class="nav__link">Services</a>
+              </li>
+
+              <li>
+                <a href="#portfolio" class="nav__link">Portfolio</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="nav__link">Contact</a>
+              </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+              <i class="ui uil-times"></i>
+            </div>
+          </div>
+
+          <div class="nav__socials">
+            <a href="www.facebook.com" target="_blank" class="nav__social-link">
+              <i class="uil uil-facebook-f"></i>
+            </a>
+
+            <a href="www.facebook.com" target="_blank" class="nav__social-link">
+              <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a href="www.facebook.com" target="_blank" class="nav__social-link">
+              <i class="uil uil-instagram"></i>
+            </a>
+
+            <a href="www.facebook.com" target="_blank" class="nav__social-link">
+              <i class="uil uil-tiktok"></i>
+            </a>
+          </div>
+
+          <div class="nav__btns">
+            <a href="#contact" class="nav__link-btn btn">Let's talk</a>
+
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="uil uil-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- HOME -->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__subtitle">Welcome to my world</span>
+            <h3 class="home__title">
+              Hi, I'm Carson Muzarabani, a <span>Web Developer</span> based in
+              Harare, Zimbabwe.
+            </h3>
+          </div>
+
+          <img
+            src="{% static 'images/IMG_20240122_124755_332.jpg' %}"
+            alt=""
+            class="home__img"
+          />
+        </div>
+      </section>
+      <!-- ABOUT -->
+
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <img
+            src="{% static 'images/IMG_20240114_182338_145.jpg' %}"
+            alt=""
+            class="about__img"
+          />
+
+          <div class="about__content">
+            <h2 class="section__title">About Me</h2>
+
+            <p class="about__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque similique quisquam, illo iste explicabo ipsa non quam
+              maiores animi repellat.
+            </p>
+
+            <div class="tabs__btns">
+              <span class="tabs__btn tab__active" data-target="#skills"
+                >Main Skills</span
+              >
+              <span class="tabs__btn" data-target="#experience"
+                >Experience</span
+              >
+              <span class="tabs__btn" data-target="#education"
+                >Education and Certification</span
+              >
+            </div>
+
+            <div class="tabs__content">
+              <div class="tabs__item tab__active" data-content id="skills">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, quisquam.
+                  </p>
+                  <p class="tabs__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, quisquam.
+                  </p>
+                  <p class="tabs__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, quisquam.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tabs__item" data-content id="experience">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">Fresher</p>
+                </div>
+              </div>
+
+              <div class="tabs__item" data-content id="education">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    Professional Certificate in Applied Software Development
+                    (ZOMAC Digital - August 2023)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES -->
+      <section class="services section" id="services">
+        <h2 class="section__title">My Services</h2>
+        <p class="section__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quod a
+          dolorem labore velit non impedit quidem libero ipsa aliquid?
+        </p>
+
+        <div class="services__container container grid">
+          <div class="services__item">
+            <i class="uil uil-layer-group services__icon"></i>
+
+            <h3 class="services__title">Website Development</h3>
+            <p class="services__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reiciendis voluptates ratione tempore. Soluta, perferendis animi.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <i class="uil uil-users-alt services__icon"></i>
+
+            <h3 class="services__title">Digital Marketing</h3>
+            <p class="services__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reiciendis voluptates ratione tempore. Soluta, perferendis animi.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <i class="uil uil-mobile-android services__icon"></i>
+
+            <h3 class="services__title">Mobile App Development</h3>
+            <p class="services__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reiciendis voluptates ratione tempore. Soluta, perferendis animi.
+            </p>
+          </div>
+
+          <div class="services__item">
+            <i class="uil uil-desktop services__icon"></i>
+
+            <h3 class="services__title">Desktop App Development</h3>
+            <p class="services__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Reiciendis voluptates ratione tempore. Soluta, perferendis animi.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO -->
+
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">My Projects</h2>
+        <p class="section__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+          obcaecati iusto maxime optio enim repudiandae tempore autem similique.
+          Sed, quaerat?
+        </p>
+
+        <div class="portfolio__container container grid">
+          <div class="portfolio__item">
+            <img
+              src="{% static 'images/Screenshot_20240617_173705_com.huawei.browser_edit_192585828311555.jpg' %}"
+              alt=""
+              class="portfolio__img"
+            />
+
+            <div class="portfolio__data">
+              <p class="portfolio__subtitle">Development</p>
+              <h3 class="portfolio__title">Web Design</h3>
+              <p class="portfolio_description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore temporibus sint ipsum suscipit, nemo provident!
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="{% static 'images/Screenshot_20240617_173145_com.huawei.browser_edit_192682691920561.jpg' %}"
+              alt=""
+              class="portfolio__img"
+            />
+
+            <div class="portfolio__data">
+              <p class="portfolio__subtitle">Development</p>
+              <h3 class="portfolio__title">Web Design</h3>
+              <p class="portfolio_description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore temporibus sint ipsum suscipit, nemo provident!
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="{% static 'images/Screenshot_20240617_172539_com.huawei.browser_edit_192997566792810.jpg' %}"
+              alt=""
+              class="portfolio__img"
+            />
+
+            <div class="portfolio__data">
+              <p class="portfolio__subtitle">Development</p>
+              <h3 class="portfolio__title">Web Design</h3>
+              <p class="portfolio_description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore temporibus sint ipsum suscipit, nemo provident!
+              </p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="{% static 'images/Screenshot_20240617_172514_com.huawei.browser_edit_193092664961201.jpg' %}"
+              alt=""
+              class="portfolio__img"
+            />
+
+            <div class="portfolio__data">
+              <p class="portfolio__subtitle">Development</p>
+              <h3 class="portfolio__title">Web Design</h3>
+              <p class="portfolio_description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Inventore temporibus sint ipsum suscipit, nemo provident!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h2 class="section__title">Hire Me</h2>
+
+            <p class="contact__description">
+              I am available for freelancework. Connect me via phone
+              <a href="tel:+263774793728">+263 774 793 728</a> or email at
+              <a href="mailto:muzarabanicarson@gmail.com"
+                >muzarabanicarson@gmail.com</a
+              >
+            </p>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-input">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  class="contact__input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact__form-input">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your e-mail"
+                  class="contact__input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact__form-input">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Write your subject"
+                  class="contact__input"
+                  id="contact-subject"
+                />
+              </div>
+
+              <div class="contact__form-input">
+                <textarea
+                  name="message"
+                  id="contact-message"
+                  class="contact__input textarea"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+
+              <input type="submit" value="Submit" class="btn" />
+
+              <p class="error__message" id="error-message"></p>
+            </form>
+          </div>
+
+          <img
+            src="{% static 'images/IMG_20240504_140624_868.jpg' %}"
+            alt=""
+            class="contact__img"
+          />
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer__container container grid">
+          <a href="{% url 'home' %}" class="footer__logo"
+            >c<span>ar</span>son</a
+          >
+
+          <div class="footer_socials">
+            <a
+              href="www.facebook.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="uil uil-facebook-f"></i>
+            </a>
+
+            <a
+              href="www.facebook.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="uil uil-linkedin"></i>
+            </a>
+
+            <a
+              href="www.facebook.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+
+            <a
+              href="www.facebook.com"
+              target="_blank"
+              class="footer__social-link"
+            >
+              <i class="uil uil-tiktok"></i>
+            </a>
+          </div>
+
+          <p class="footer__copyright">&copy;2024. All rights reserved</p>
+        </div>
+      </footer>
+      <!-- Scroll up -->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-angle-up scrollup__icon"></i>
+      </a>
+    </main>
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- Index JS -->
+    <script src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>
